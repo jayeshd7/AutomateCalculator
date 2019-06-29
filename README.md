@@ -8,8 +8,11 @@ This program will run on Mac machine.
 Basic Pre-requisites -
 
 1.Pyhton 3.6
+
 2.Pyhton pyautogui Library
+
 3.you can install via pip install pyautogui
+
 4. to run calc.exe on mac you need to install WINE follow below steps
 https://www.wikihow.com/Open-Exe-Files-on-Mac
 
@@ -24,6 +27,8 @@ this will providing a tuple ( co -ordinates)
 
 to launch the calc.exe
 I am using subprocess package which is default available.
+
+Main class is operation.py
 
 
 Note - this Program using PycharmIDE with Python latest version.
