@@ -1,0 +1,57 @@
+
+
+'''
+
+
+@Author - Jayesh
+
+'''
+
+import pyautogui
+import math
+from subprocess import call
+
+'''
+call calculator application
+'''
+
+
+call(["calc.exe"])
+
+screenShotPath = "/Users/jayeshdalal/PycharmProjects/AutomateCalculator/AutomateCalculator/ScreenShot"
+
+'''Assigment Add'''
+
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'1key.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'plus.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'1key.png'))
+
+'''you can use enter key as well'''
+pyautogui.click('enter')
+#pyautogui.click(pyautogui.locateCenterOnScreen('equal.png'))
+
+
+'''Division '''
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'2key.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'divison.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'2key.png'))
+pyautogui.click('enter')
+
+
+'''Mod'''
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'3key.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'mod.png'))
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'2key.png'))
+pyautogui.click('enter')
+
+
+'''sqr'''
+pyautogui.click(pyautogui.locateCenterOnScreen(screenShotPath+'/'+'4key.png'))
+
+sqrImage = pyautogui.locateCenterOnScreen(screenShotPath + '/' + 'sqr.png')
+firstValue = pyautogui.click(sqrImage)
+secondValue = pyautogui.click(sqrImage)
+thirdValue = pyautogui.click(sqrImage)
+
+
+
